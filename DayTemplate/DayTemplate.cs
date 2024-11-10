@@ -9,9 +9,14 @@ namespace AOC23.DayTemplate
     public abstract class DayTemplate
     {
         public IEnumerable<string> Lines { get; set; }
-        public void Execute(string filename)
+        public string FileName { get; set; }
+        public DayTemplate(string fileName)
         {
-            Lines = File.ReadLines(Path.Combine(Directory.GetCurrentDirectory(), "Input", filename));
+            FileName = fileName;
+        }
+        public void Execute()
+        {
+            Lines = File.ReadLines(Path.Combine(Directory.GetCurrentDirectory(), "Input", FileName));
             Act();
         }
         public virtual void Act()

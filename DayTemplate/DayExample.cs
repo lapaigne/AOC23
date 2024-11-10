@@ -8,6 +8,7 @@ namespace AOC23.DayTemplate
 {
     public class DayExample : DayTemplate
     {
+        public DayExample(string fileName) : base(fileName) { }
         public override void Act()
         {
             Console.WriteLine(Lines.First());

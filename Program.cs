@@ -11,8 +11,8 @@ namespace AOC23
 
         static void Example()
         {
-            DayExample day = new DayExample();
-            day.Execute("InputExample.txt");
+            DayExample day = new DayExample("InputExample.txt");
+            day.Execute();
         }
     }
 }
