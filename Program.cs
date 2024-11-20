@@ -7,7 +7,7 @@ namespace AOC23
     {
         static void Main(string[] args)
         {
-            Day1();
+            Day2();
         }
 
         static void Example()
@@ -18,6 +18,11 @@ namespace AOC23
         static void Day1()
         {
             Day1 day = new Day1("Input1.txt");
+            day.Execute();
+        }
+        static void Day2()
+        {
+            Day2 day = new Day2("Input2.txt");
             day.Execute();
         }
     }
